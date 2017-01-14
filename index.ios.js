@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-export default class RNShare extends Component {
+export class AppComponent extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -28,6 +28,42 @@ export default class RNShare extends Component {
         </Text>
       </View>
     );
+  }
+}
+
+export class ActionExtensionComponent extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+          Welcome to our Action Extension!
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit index.ios.js
+        </Text>
+        <Text style={styles.instructions}>
+          Press Cmd+R to reload,{'\n'}
+          Cmd+D or shake for dev menu
+        </Text>
+      </View>
+    );
+  }
+}
+
+export default class RNShare extends Component {
+  static propTypes = {
+    isActionExtension: React.PropTypes.bool
+  }
+  static defaultProps = {
+    isActionExtension: false
+  }
+
+  render() {
+    if (this.props.isActionExtension) {
+      return <ActionExtensionComponent />
+    } else {
+      return <AppComponent />
+    }
   }
 }
 
