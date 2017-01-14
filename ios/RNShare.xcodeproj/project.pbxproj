@@ -27,6 +27,9 @@
 		CD1BE5311E2AC86400918286 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1BE5301E2AC86400918286 /* ActionViewController.swift */; };
 		CD1BE5341E2AC86400918286 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1BE5321E2AC86400918286 /* MainInterface.storyboard */; };
 		CD1BE5381E2AC86400918286 /* Test Action.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD1BE52E1E2AC86400918286 /* Test Action.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD1BE55E1E2AC9D600918286 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1BE55D1E2AC9D600918286 /* ActionViewController.m */; };
+		CD1BE5611E2AC9D600918286 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1BE55F1E2AC9D600918286 /* MainInterface.storyboard */; };
+		CD1BE5651E2AC9D600918286 /* ActionExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD1BE55A1E2AC9D600918286 /* ActionExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,6 +222,13 @@
 			remoteGlobalIDString = CD1BE52D1E2AC86400918286;
 			remoteInfo = "Test Action";
 		};
+		CD1BE5631E2AC9D600918286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD1BE5591E2AC9D600918286;
+			remoteInfo = ActionExt;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -228,6 +238,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				CD1BE5651E2AC9D600918286 /* ActionExt.appex in Embed App Extensions */,
 				CD1BE5381E2AC86400918286 /* Test Action.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -262,6 +273,11 @@
 		CD1BE5301E2AC86400918286 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		CD1BE5331E2AC86400918286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		CD1BE5351E2AC86400918286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD1BE55A1E2AC9D600918286 /* ActionExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1BE55C1E2AC9D600918286 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		CD1BE55D1E2AC9D600918286 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		CD1BE5601E2AC9D600918286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CD1BE5621E2AC9D600918286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +308,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD1BE52B1E2AC86400918286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1BE5571E2AC9D600918286 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -459,6 +482,7 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNShareTests */,
 				CD1BE52F1E2AC86400918286 /* Test Action */,
+				CD1BE55B1E2AC9D600918286 /* ActionExt */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 			);
 			indentWidth = 2;
@@ -471,6 +495,7 @@
 				13B07F961A680F5B00A75B9A /* RNShare.app */,
 				00E356EE1AD99517003FC87E /* RNShareTests.xctest */,
 				CD1BE52E1E2AC86400918286 /* Test Action.appex */,
+				CD1BE55A1E2AC9D600918286 /* ActionExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -483,6 +508,17 @@
 				CD1BE5351E2AC86400918286 /* Info.plist */,
 			);
 			path = "Test Action";
+			sourceTree = "<group>";
+		};
+		CD1BE55B1E2AC9D600918286 /* ActionExt */ = {
+			isa = PBXGroup;
+			children = (
+				CD1BE55C1E2AC9D600918286 /* ActionViewController.h */,
+				CD1BE55D1E2AC9D600918286 /* ActionViewController.m */,
+				CD1BE55F1E2AC9D600918286 /* MainInterface.storyboard */,
+				CD1BE5621E2AC9D600918286 /* Info.plist */,
+			);
+			path = ActionExt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -520,6 +556,7 @@
 			);
 			dependencies = (
 				CD1BE5371E2AC86400918286 /* PBXTargetDependency */,
+				CD1BE5641E2AC9D600918286 /* PBXTargetDependency */,
 			);
 			name = RNShare;
 			productName = "Hello World";
@@ -543,6 +580,23 @@
 			productReference = CD1BE52E1E2AC86400918286 /* Test Action.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		CD1BE5591E2AC9D600918286 /* ActionExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1BE5661E2AC9D600918286 /* Build configuration list for PBXNativeTarget "ActionExt" */;
+			buildPhases = (
+				CD1BE5561E2AC9D600918286 /* Sources */,
+				CD1BE5571E2AC9D600918286 /* Frameworks */,
+				CD1BE5581E2AC9D600918286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionExt;
+			productName = ActionExt;
+			productReference = CD1BE55A1E2AC9D600918286 /* ActionExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -558,6 +612,10 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					CD1BE52D1E2AC86400918286 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					CD1BE5591E2AC9D600918286 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -625,6 +683,7 @@
 				13B07F861A680F5B00A75B9A /* RNShare */,
 				00E356ED1AD99517003FC87E /* RNShareTests */,
 				CD1BE52D1E2AC86400918286 /* Test Action */,
+				CD1BE5591E2AC9D600918286 /* ActionExt */,
 			);
 		};
 /* End PBXProject section */
@@ -832,6 +891,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD1BE5581E2AC9D600918286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1BE5611E2AC9D600918286 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -877,6 +944,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD1BE5561E2AC9D600918286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1BE55E1E2AC9D600918286 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -889,6 +964,11 @@
 			isa = PBXTargetDependency;
 			target = CD1BE52D1E2AC86400918286 /* Test Action */;
 			targetProxy = CD1BE5361E2AC86400918286 /* PBXContainerItemProxy */;
+		};
+		CD1BE5641E2AC9D600918286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD1BE5591E2AC9D600918286 /* ActionExt */;
+			targetProxy = CD1BE5631E2AC9D600918286 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -906,6 +986,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				CD1BE5331E2AC86400918286 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		CD1BE55F1E2AC9D600918286 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD1BE5601E2AC9D600918286 /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -1098,6 +1186,44 @@
 			};
 			name = Release;
 		};
+		CD1BE5671E2AC9D600918286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ActionExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNShare.ActionExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD1BE5681E2AC9D600918286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ActionExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNShare.ActionExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1133,6 +1259,14 @@
 			buildConfigurations = (
 				CD1BE5391E2AC86400918286 /* Debug */,
 				CD1BE53A1E2AC86400918286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD1BE5661E2AC9D600918286 /* Build configuration list for PBXNativeTarget "ActionExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1BE5671E2AC9D600918286 /* Debug */,
+				CD1BE5681E2AC9D600918286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
