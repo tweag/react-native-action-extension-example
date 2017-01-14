@@ -329,8 +329,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD1BE5691E2ACADB00918286 /* libRCTActionSheet.a in Frameworks */,
 				CD1BE56A1E2ACADB00918286 /* libRCTAnimation.a in Frameworks */,
+				CD1BE5731E2ACADB00918286 /* libReact.a in Frameworks */,
+				CD1BE5691E2ACADB00918286 /* libRCTActionSheet.a in Frameworks */,
 				CD1BE56B1E2ACADB00918286 /* libRCTGeolocation.a in Frameworks */,
 				CD1BE56C1E2ACADB00918286 /* libRCTImage.a in Frameworks */,
 				CD1BE56D1E2ACADB00918286 /* libRCTLinking.a in Frameworks */,
@@ -339,7 +340,6 @@
 				CD1BE5701E2ACADB00918286 /* libRCTText.a in Frameworks */,
 				CD1BE5711E2ACADB00918286 /* libRCTVibration.a in Frameworks */,
 				CD1BE5721E2ACADB00918286 /* libRCTWebSocket.a in Frameworks */,
-				CD1BE5731E2ACADB00918286 /* libReact.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
