@@ -24,6 +24,9 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		CD1BE5311E2AC86400918286 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1BE5301E2AC86400918286 /* ActionViewController.swift */; };
+		CD1BE5341E2AC86400918286 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1BE5321E2AC86400918286 /* MainInterface.storyboard */; };
+		CD1BE5381E2AC86400918286 /* Test Action.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD1BE52E1E2AC86400918286 /* Test Action.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -209,7 +212,28 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		CD1BE5361E2AC86400918286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD1BE52D1E2AC86400918286;
+			remoteInfo = "Test Action";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD1BE5551E2AC86400918286 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD1BE5381E2AC86400918286 /* Test Action.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -234,6 +258,10 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		CD1BE52E1E2AC86400918286 /* Test Action.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Test Action.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1BE5301E2AC86400918286 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		CD1BE5331E2AC86400918286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CD1BE5351E2AC86400918286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +288,13 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1BE52B1E2AC86400918286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +458,7 @@
 				13B07FAE1A68108700A75B9A /* RNShare */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNShareTests */,
+				CD1BE52F1E2AC86400918286 /* Test Action */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 			);
 			indentWidth = 2;
@@ -434,8 +470,19 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* RNShare.app */,
 				00E356EE1AD99517003FC87E /* RNShareTests.xctest */,
+				CD1BE52E1E2AC86400918286 /* Test Action.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CD1BE52F1E2AC86400918286 /* Test Action */ = {
+			isa = PBXGroup;
+			children = (
+				CD1BE5301E2AC86400918286 /* ActionViewController.swift */,
+				CD1BE5321E2AC86400918286 /* MainInterface.storyboard */,
+				CD1BE5351E2AC86400918286 /* Info.plist */,
+			);
+			path = "Test Action";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,15 +514,34 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				CD1BE5551E2AC86400918286 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CD1BE5371E2AC86400918286 /* PBXTargetDependency */,
 			);
 			name = RNShare;
 			productName = "Hello World";
 			productReference = 13B07F961A680F5B00A75B9A /* RNShare.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CD1BE52D1E2AC86400918286 /* Test Action */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1BE5541E2AC86400918286 /* Build configuration list for PBXNativeTarget "Test Action" */;
+			buildPhases = (
+				CD1BE52A1E2AC86400918286 /* Sources */,
+				CD1BE52B1E2AC86400918286 /* Frameworks */,
+				CD1BE52C1E2AC86400918286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Test Action";
+			productName = "Test Action";
+			productReference = CD1BE52E1E2AC86400918286 /* Test Action.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -483,12 +549,17 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					CD1BE52D1E2AC86400918286 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -553,6 +624,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* RNShare */,
 				00E356ED1AD99517003FC87E /* RNShareTests */,
+				CD1BE52D1E2AC86400918286 /* Test Action */,
 			);
 		};
 /* End PBXProject section */
@@ -752,6 +824,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD1BE52C1E2AC86400918286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1BE5341E2AC86400918286 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -789,6 +869,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD1BE52A1E2AC86400918286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1BE5311E2AC86400918286 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -796,6 +884,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* RNShare */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		CD1BE5371E2AC86400918286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD1BE52D1E2AC86400918286 /* Test Action */;
+			targetProxy = CD1BE5361E2AC86400918286 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -807,6 +900,14 @@
 			);
 			name = LaunchScreen.xib;
 			path = RNShare;
+			sourceTree = "<group>";
+		};
+		CD1BE5321E2AC86400918286 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD1BE5331E2AC86400918286 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -844,6 +945,7 @@
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
@@ -862,6 +964,7 @@
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = RNShare/Info.plist;
@@ -952,6 +1055,49 @@
 			};
 			name = Release;
 		};
+		CD1BE5391E2AC86400918286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Test Action/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.RNShare.Test-Action";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CD1BE53A1E2AC86400918286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Test Action/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.RNShare.Test-Action";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -981,6 +1127,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CD1BE5541E2AC86400918286 /* Build configuration list for PBXNativeTarget "Test Action" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1BE5391E2AC86400918286 /* Debug */,
+				CD1BE53A1E2AC86400918286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
